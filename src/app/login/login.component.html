@@ -1,5 +1,6 @@
 <form [formGroup]="loginForm" (submit)="login()" auutocomplete="new-password" >
-<h1>Login</h1>
+<h1>Hello Again!</h1>
+
 <div class="form-control">
   <label for="email">Email</label>
   <input formControlName="email"
@@ -10,10 +11,16 @@
   <input formControlName="password"
    id="password" autocomplete="new-password" type="password">
 </div>
+<div class="form-checkbox">
+<input type="checkbox" class="box">
+<label>Remember Me</label>
+<p class="recovery">Recovery Password</p>
+</div>
 
 <button type="submit">Login </button>
 
-
+<div class="">
 <p>Don't have an account yet? <a href="">Sign Up</a></p>
+</div>
 </form>
 
